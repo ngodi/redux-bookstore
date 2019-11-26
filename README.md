@@ -21,6 +21,7 @@ In this project, React and Redux are used to build a very bookstore organization
 Ngodi Albert
 
 ### live view
+ https://redux-bookstore-ngodi.herokuapp.com
 
 ### User guide & Installation
 
