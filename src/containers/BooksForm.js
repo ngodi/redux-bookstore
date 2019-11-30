@@ -15,7 +15,7 @@ const BooksForm = () => {
                   <label>Enter book title:</label><input type='text' /><br />
               </div>
               <div className='formSelect'>
-                  <label>Select category: </label><select>{categoryList}</select>
+                  <label>Select category: </label><select name='category'>{categoryList}</select>
               </div><br />
               
               <button type='submit'>submit</button>

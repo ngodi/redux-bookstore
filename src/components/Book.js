@@ -1,20 +1,15 @@
 import React from 'react';
 
+const Book = ({ title, category}) => {
 
-class Book extends React.Component{
- constructor(props){
-     super(props);
-
- }
- render(){
      return(
          <tr>
-             <td></td>
-             <td></td>
-             <td></td>
+             <td>{ID}</td>
+             <td>{title}</td>
+             <td>{category}</td>
          </tr>
      )
  }
-}
+
 
 export default Book;
