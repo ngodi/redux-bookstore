@@ -1,0 +1,26 @@
+.bookForm{
+    width: 300px;
+    margin: auto;
+    border: 2px solid gray;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button{
+   width: 300px;
+   padding: 5px;
+   margin-top: 20px;
+}
+
+.formInput{
+    margin: 10px 0;
+}
+
+.formSelect{
+    display: flex;
+    justify-content: space-between;
+}
+
+.selectOption{
+    width: 200px;
+}
