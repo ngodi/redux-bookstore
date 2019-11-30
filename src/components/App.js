@@ -1,13 +1,32 @@
 import React from 'react';
-import BooksForm from '../containers/BooksForm';
-// import BooksList from '../containers/BooksList';
+import {connect} from 'react-redux';
 
-const App = () => {
+import { createBook, removeBook } from '../actions/index';
+import BooksForm from '../containers/BooksForm';
+import BooksList from '../containers/BooksList';
+
+const App = (props) => {
     return (
         <div>
           <BooksForm />
+          <BooksList />
         </div>
     )
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    books: state.books
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    createBook: (book)=> dispatch(createBook(book)),
+    removeBook: (book)=>dispatch(removeBook(book))
+  }
+}
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
