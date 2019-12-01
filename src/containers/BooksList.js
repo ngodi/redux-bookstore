@@ -20,14 +20,14 @@ const BooksList = ({ books }) => (
       </thead>
       <tbody>
         {
-         books.map((book) => <Book key={book.id} id={book.id} title={book.title} category={book.category} />)
+         books.map(book => <Book key={book.id} id={book.id} title={book.title} category={book.category} />)
         }
       </tbody>
     </table>
   </div>
 );
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   books: state.books.books,
 });
 export default connect(

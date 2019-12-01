@@ -12,13 +12,13 @@ const BooksForm = () => {
       <form>
         <h2>Add book to store</h2>
         <div className="formInput">
-          <label>Enter book title:</label>
-          <input type="text" />
+          <label for="title">Enter book title:</label>
+          <input id="title" type="text" />
           <br />
         </div>
         <div className="formSelect">
-          <label>Select category: </label>
-          <select name="category">{categoryList}</select>
+          <label for="category">Select category: </label>
+          <select id="category" name="category">{categoryList}</select>
         </div>
         <br />
 
