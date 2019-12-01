@@ -1,0 +1,8 @@
+.app{
+  display: flex;
+  margin: 100px;
+}
+
+.left-sidebar{
+  margin-right: 100px
+}
