@@ -28,7 +28,7 @@ handleChange = (e) => {
   });
 };
 
-handleSubmit = event => {
+handleSubmit = (event) => {
   event.preventDefault();
   const newbook = this.state;
 
@@ -74,7 +74,7 @@ Select category:
 BooksForm.propTypes = {
   createBook: PropTypes.func.isRequired,
 };
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   createBook: (newbook) => dispatch(createBook(newbook)),
 });
 
