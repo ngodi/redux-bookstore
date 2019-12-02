@@ -1,13 +1,9 @@
-/* eslint-disable arrow-parens */
-/* eslint-disable react/no-access-state-in-setstate */
-/* eslint-disable react/no-unused-state */
-/* eslint-disable react/state-in-constructor */
-/* eslint-disable react/prefer-stateless-function */
-/* eslint-disable no-undef */
-/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/no-array-index-key */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/no-unused-state */
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import { getId } from '../reducers/books';
 import './bookForm.css';
@@ -75,7 +71,9 @@ Select category:
   );
 }
 }
-
+BooksForm.propTypes = {
+  createBook: PropTypes.func.isRequired,
+};
 const mapDispatchToProps = dispatch => ({
   createBook: (newbook) => dispatch(createBook(newbook)),
 });
