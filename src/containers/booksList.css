@@ -1,0 +1,13 @@
+.booksList{
+    margin-top: 300px
+}
+table, th, td{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+table{
+    width: 500px
+}
