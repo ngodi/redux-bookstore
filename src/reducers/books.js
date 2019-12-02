@@ -25,7 +25,7 @@ const booksReducer = (state = initialState, action) => {
       return { books: [...state.books, action.book] };
     case 'REMOVE_BOOK':
       [...state.books].splice([...state.books].indexOf(action.book), 1);
-      return { books: [...state.books].filter((book) => book !== action.book) };
+      return { books: [...state.books].filter(book => book !== action.book) };
     default: return state;
   }
 };

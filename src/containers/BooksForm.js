@@ -28,7 +28,7 @@ handleChange = (e) => {
   });
 };
 
-handleSubmit = (event) => {
+handleSubmit = event => {
   event.preventDefault();
   const newbook = this.state;
 
@@ -75,7 +75,7 @@ BooksForm.propTypes = {
   createBook: PropTypes.func.isRequired,
 };
 const mapDispatchToProps = (dispatch) => ({
-  createBook: (newbook) => dispatch(createBook(newbook)),
+  createBook: newbook => dispatch(createBook(newbook)),
 });
 
 export default connect(null, mapDispatchToProps)(BooksForm);
