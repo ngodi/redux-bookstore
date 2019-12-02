@@ -1,3 +1,4 @@
+/* eslint-disable arrow-parens */
 /* eslint-disable max-len */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
@@ -10,6 +11,7 @@ import Book from '../components/Book';
 
 const BooksList = ({ books }) => (
   <div className="bookList">
+{books.length}
     <table>
       <thead>
         <tr>
@@ -20,13 +22,12 @@ const BooksList = ({ books }) => (
       </thead>
       <tbody>
         {
-         books.map(book => <Book key={book.id} id={book.id} title={book.title} category={book.category} />)
+         books.map(book => <Book key={book.id} title={book.title} category={book.category} />)
         }
       </tbody>
     </table>
   </div>
 );
-
 const mapStateToProps = state => ({
   books: state.books.books,
 });
