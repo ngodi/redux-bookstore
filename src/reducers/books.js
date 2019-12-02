@@ -1,3 +1,4 @@
+/* eslint-disable arrow-parens */
 export const getId = () => Math.floor(Math.random() * 100);
 const initialState = {
   books: [
