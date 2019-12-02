@@ -1,3 +1,4 @@
+/* eslint-disable arrow-parens */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/no-unused-state */
