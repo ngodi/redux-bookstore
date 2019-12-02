@@ -8,11 +8,12 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+
 import { getId } from '../reducers/books';
 import './bookForm.css';
 import { createBook } from '../actions/index';
 
+const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
 class BooksForm extends React.Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class BooksForm extends React.Component {
     this.state = {
       id: getId(),
       title: '',
-      category: '',
+      category: categories[0],
     };
   }
 
@@ -38,19 +39,23 @@ handleSubmit = event => {
   if (newbook.title !== '' && newbook.category !== '') {
     this.props.createBook(newbook);
   }
+  this.setState({
+    id: getId(),
+    title: '',
+    category: categories[0],
+  });
 };
 
 render() {
-  const categories = ['Select', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   const categoryList = categories.map((category, i) => <option key={i} className="selectOption">{category}</option>);
   return (
     <div className="bookForm">
-      <form>
+      <form onSubmit={this.handleChange.bind(this)}>
         <h2>Add book to store</h2>
         <div className="formInput">
           <label htmlFor="title">
 Enter book title:
-            <input id="title" name="title" type="text" onChange={this.handleChange.bind(this)} />
+            <input id="title" name="title" value={this.state.title} type="text" onChange={this.handleChange.bind(this)} />
           </label>
 
           <br />
@@ -58,7 +63,7 @@ Enter book title:
         <div className="formSelect">
           <label htmlFor="category">
 Select category:
-            <select id="category" name="category" onChange={this.handleChange.bind(this)}>{categoryList}</select>
+            <select id="category" name="category">{categoryList}</select>
           </label>
         </div>
         <br />
@@ -70,11 +75,9 @@ Select category:
   );
 }
 }
-BooksForm.propTypes = {
-  createBook: PropTypes.func.isRequired,
-};
+
 const mapDispatchToProps = dispatch => ({
-  createBook: () => dispatch(createBook()),
+  createBook: (newbook) => dispatch(createBook(newbook)),
 });
 
 export default connect(null, mapDispatchToProps)(BooksForm);
