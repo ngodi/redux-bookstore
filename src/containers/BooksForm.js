@@ -50,7 +50,7 @@ render() {
   const categoryList = categories.map((category, i) => <option key={i} className="selectOption">{category}</option>);
   return (
     <div className="bookForm">
-      <form onSubmit={this.handleChange.bind(this)}>
+      <form onSubmit={this.handleSubmit.bind(this)}>
         <h2>Add book to store</h2>
         <div className="formInput">
           <label htmlFor="title">
@@ -63,12 +63,12 @@ Enter book title:
         <div className="formSelect">
           <label htmlFor="category">
 Select category:
-            <select id="category" name="category">{categoryList}</select>
+            <select id="category" onChange={this.handleChange.bind(this)} name="category">{categoryList}</select>
           </label>
         </div>
         <br />
 
-        <button onClick={this.handleSubmit.bind(this)} type="submit">submit</button>
+        <button className="btn" type="submit">submit</button>
       </form>
 
     </div>

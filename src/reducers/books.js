@@ -25,7 +25,7 @@ const booksReducer = (state = initialState, action) => {
     case 'CREATE_BOOK':
       return { books: [...state.books, action.book] };
     case 'REMOVE_BOOK': return {
-      books: [action.payload],
+      books: [...state.books].splice([...state.books].indexOf(action.book), 1),
     };
     default: return state;
   }
