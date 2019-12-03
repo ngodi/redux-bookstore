@@ -1,11 +1,12 @@
 A bookstore management tool with React and Redux
 ================================================
+![bookstore](bookstore.png)
 
 ### Introduction
 
 In this project, React and Redux are used to build a simple bookstore organization and management system.
 
-### Tools used
+### Built with
 
 *   Node.js
 *   React
@@ -16,27 +17,43 @@ In this project, React and Redux are used to build a simple bookstore organizati
 *   CSS
 *   ES6
 
-### Author
 
-Ngodi Albert
-
-### live view
+### live Demo
  https://redux-bookstore-ngodi.herokuapp.com
 
-### User guide & Installation
+ Getting Started
+---------------
 
-clone the project repo
-navigate into the project directory; cd redux-bookstore
+### Prerequisites
+
+### Setup
+
+clone the project repo navigate into the project directory; cd redux-bookstore
+
+### Install
+
 install dependencies by running npm install
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Usage
 
-## Available Scripts
+run npm start
 
-In the project directory, you can run:
+### Run tests
 
-### `npm start`
+### Deployment
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Authors
 
+Ngodi Albert Github: @ngodi Twitter: Linkedin:
+
+### Contributions
+
+issues and feature requests are welcome! Feel free to check the issues page. Show your support Give a star if you like this project!
+
+### Acknowledgments
+
+Hat tip to anyone whose code was used Inspiration etc
+
+### License
+
+This project is MiT licensed.
