@@ -52,7 +52,7 @@ render() {
         <div className="formInput">
           <label htmlFor="title">
 Enter book title:
-            <input id="title" name="title" value={this.state.title} type="text" onChange={this.handleChange.bind(this)} />
+            <input id="title" className="title" name="title" value={this.state.title} type="text" onChange={this.handleChange.bind(this)} />
           </label>
 
           <br />

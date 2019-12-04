@@ -15,12 +15,14 @@
 .formInput{
     margin: 10px 0;
 }
-
-.formSelect{
-    display: flex;
-    justify-content: space-between;
+.title{
+    width: 160px;
+    height: 20px;
+    margin-left: 10px;
 }
 
-.selectOption{
-    width: 200px;
+select{
+    width: 170px;
+    height: 30px;
+    margin-left: 10px;
 }

@@ -1,7 +1,12 @@
 A bookstore management tool with React and Redux
 ================================================
 ![bookstore](bookstore.png)
+### Features
 
+* Display books from store
+* Add books to store
+* Delete books from store
+* Filter books to display by category
 ### Introduction
 
 In this project, React and Redux are used to build a simple bookstore organization and management system.
