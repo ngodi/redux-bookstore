@@ -20,6 +20,9 @@ const BooksList = ({
   const handleFilterChange = (e) => {
     changeFilter(e);
   };
+  const filteredBooks = books.filter(book => book.category === filter);
+  const liveBooks = (filter === 'ALL') ? books : filteredBooks;
+  const allBooksList = liveBooks.map(book => <Book handleRemoveBook={handleRemoveBook} key={book.id} book={book} />);
   return (
     <div className="bookList">
       <CategoryFilter handleFilterChange={handleFilterChange} filter={filter} />
@@ -34,7 +37,7 @@ const BooksList = ({
         </thead>
         <tbody>
           {
-       books.map(book => <Book handleRemoveBook={handleRemoveBook} key={book.id} book={book} />)
+      allBooksList
       }
         </tbody>
       </table>
