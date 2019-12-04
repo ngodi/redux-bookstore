@@ -1,8 +1,5 @@
 .app{
   display: flex;
   margin: 50px;
-}
-
-.left-sidebar{
-  margin-right: 100px
+  justify-content: space-evenly;
 }

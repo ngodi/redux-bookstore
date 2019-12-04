@@ -4,6 +4,7 @@ import './App.css';
 import NavBar from './NavBar';
 import BooksForm from '../containers/BooksForm';
 import BooksList from '../containers/BooksList';
+import CategoryFilter from './CategoryFilter';
 
 const App = () => (
   <div>
@@ -11,6 +12,7 @@ const App = () => (
     <div className="app">
       <div className="left-sidebar">
         <BooksForm />
+        <CategoryFilter />
       </div>
       <div className="main-section">
         <BooksList />
