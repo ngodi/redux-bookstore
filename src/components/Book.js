@@ -1,6 +1,7 @@
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Book.css';
 
 const Book = ({
   handleRemoveBook, book,
@@ -14,12 +15,12 @@ const Book = ({
   };
 
   return (
-    <tr>
-      <td>{book.id}</td>
-      <td>{book.title}</td>
-      <td>{book.category}</td>
-      <td><button onClick={newhandleRemoveBook} type="button">remove</button></td>
-    </tr>
+    <ul className="book">
+      <li>{book.id}</li>
+      <li>{book.title}</li>
+      <li>{book.category}</li>
+      <li><button onClick={newhandleRemoveBook} type="button">remove</button></li>
+    </ul>
   );
 };
 

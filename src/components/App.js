@@ -6,14 +6,12 @@ import BooksForm from '../containers/BooksForm';
 import BooksList from '../containers/BooksList';
 
 const App = () => (
-  <div>
-    <NavBar />
-    <div className="app">
-      <div className="left-sidebar">
-        <BooksForm />
-      </div>
-      <div className="main-section">
-        <BooksList />
+  <div className="bookstoreCms">
+    <div className="content">
+      <NavBar />
+      <div className="app">
+      <BooksList />
+      <BooksForm /> 
       </div>
     </div>
   </div>

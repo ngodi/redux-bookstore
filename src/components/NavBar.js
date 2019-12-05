@@ -3,7 +3,7 @@ import './NavBar.css';
 
 const NavBar = () => (
   <nav>
-    <h1>Bookstore Management System</h1>
+    <h1>Bookstore CMS</h1>
   </nav>
 );
 

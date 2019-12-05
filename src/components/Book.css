@@ -1,0 +1,10 @@
+ul li{
+    list-style-type: none;
+}
+.book{
+    border: 1px solid lightgrey;
+    padding: 15px 10px;
+    margin: 10px 20px;
+    background: white;
+    border-radius: 5px;
+}

@@ -26,21 +26,9 @@ const BooksList = ({
   return (
     <div className="bookList">
       <CategoryFilter handleFilterChange={handleFilterChange} filter={filter} />
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Remove Book</th>
-          </tr>
-        </thead>
-        <tbody>
-          {
-      allBooksList
-      }
-        </tbody>
-      </table>
+     <div>
+       {allBooksList}
+     </div>
     </div>
   );
 };
