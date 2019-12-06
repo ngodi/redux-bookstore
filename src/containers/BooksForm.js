@@ -52,7 +52,7 @@ render() {
         <div className="formInput">
             <input id="title" placeHolder="Book Title" className="title" name="title" value={this.state.title} type="text" onChange={this.handleChange.bind(this)} />
  
-            <select id="category"  onChange={this.handleChange.bind(this)} name="category">{categoryList}</select>
+            <select id="category" className="selectCategory" onChange={this.handleChange.bind(this)} name="category">{categoryList}</select>
  
            <button className="btn" type="submit">ADD BOOK</button>
            </div>

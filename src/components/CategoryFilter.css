@@ -1,3 +1,36 @@
 .categoryFilter{
     margin-bottom: 10px;
 }
+
+nav{
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px 10px;
+    width: inherit;
+    margin-bottom:40px;
+}
+nav h1{
+    width: 240px;
+    height: 37px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0290ff;
+}
+
+.books{
+    margin-right: 20px;
+}
+.selectFilter{
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    border: solid 1px white;
+    background: white;
+    margin-top:10px ;
+}

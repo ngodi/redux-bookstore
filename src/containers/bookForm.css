@@ -1,26 +1,36 @@
 
 .btn{
     width: 100px;
-    height: 45px;
-    border-radius: 3px;
+    height: 40px;
     background-color: #0290ff;
+    border: none;
+    padding: 5px 10px;
   }
 
 .title{
-    width: 500px;
-    height: 45px;
-    border-radius: 4px;
+    width: 600px;
+    height: 30px;
+    padding: 5px 10px;
     border: solid 1px #e8e8e8;
     background-color: #ffffff;
   }
-select{
-    width: 285px;
-    height: 45px;
-    border-radius: 4px;
-    border: solid 1px #e8e8e8;
-    background-color: #ffffff;
+.selectCategory{
+    width: 100px;
+    height: 40px;
+    border: solid 1px white;
+    background: white;
+    padding: 5px 10px;
   }
 .formInput{
     display:flex;
     justify-content: space-between;
+}
+
+.bookForm{
+  padding: 15px 10px;
+    margin: 10px 50px;
+}
+
+.bookForm h2{
+  margin-bottom: 20px;
 }

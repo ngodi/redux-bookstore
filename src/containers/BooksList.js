@@ -21,7 +21,7 @@ const BooksList = ({
     changeFilter(e);
   };
   const filteredBooks = books.filter(book => book.category === filter);
-  const liveBooks = (filter === 'ALL') ? books : filteredBooks;
+  const liveBooks = (filter === 'CATEGORY') ? books : filteredBooks;
   const allBooksList = liveBooks.map(book => <Book handleRemoveBook={handleRemoveBook} key={book.id} book={book} />);
   return (
     <div className="bookList">
