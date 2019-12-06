@@ -15,12 +15,20 @@ const Book = ({
   };
 
   return (
-    <ul className="book">
-      <li>{book.id}</li>
-      <li>{book.title}</li>
-      <li>{book.category}</li>
-      <li><button onClick={newhandleRemoveBook} type="button">remove</button></li>
-    </ul>
+    <div className="book">
+        <div className="boonInfo">
+          <p className="bookCategory">{book.category}</p>
+          <span className="bookId">BOOK ID: {book.id}</span>
+          <h3 className="booktitle">{book.title}</h3>
+          <button className="removeBtn" onClick={newhandleRemoveBook} type="button">remove</button>
+        </div>
+        <div className="percentage">
+           <p>Completed</p>
+        </div>
+        <div className="currentChapter">
+           <p>CURRENT CHAPTER</p>
+        </div>
+  </div>
   );
 };
 

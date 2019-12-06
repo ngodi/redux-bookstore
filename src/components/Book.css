@@ -1,10 +1,17 @@
-ul li{
-    list-style-type: none;
-}
 .book{
     border: 1px solid lightgrey;
     padding: 15px 10px;
     margin: 15px 50px;
     background: white;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.removeBtn{
+    border:none;
+    color:blue;
+    background:none;
+    text-transform: capitalize;
+    cursor: pointer;
 }
