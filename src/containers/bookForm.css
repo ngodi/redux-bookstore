@@ -1,28 +1,38 @@
-.bookForm{
-    width: 300px;
-    margin: auto;
-    border: 2px solid gray;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
 
 .btn{
-   width: 300px;
-   padding: 5px;
-   margin-top: 20px;
-}
+    width: 100px;
+    height: 40px;
+    background-color: #0290ff;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+  }
 
-.formInput{
-    margin: 10px 0;
-}
 .title{
-    width: 160px;
-    height: 20px;
-    margin-left: 10px;
+    width: 600px;
+    height: 30px;
+    padding: 5px 10px;
+    border: solid 1px #e8e8e8;
+    background-color: #ffffff;
+  }
+.selectCategory{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #e8e8e8;
+    background: white;
+    padding: 5px 10px;
+  }
+.formInput{
+    display:flex;
+    justify-content: space-between;
 }
 
-select{
-    width: 170px;
-    height: 30px;
-    margin-left: 10px;
+.bookForm{
+  padding: 15px 10px;
+    margin: 10px 50px;
+}
+
+.bookForm h2{
+  margin-bottom: 20px;
 }

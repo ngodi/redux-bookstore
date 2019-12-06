@@ -1,19 +1,15 @@
 import React from 'react';
 import './App.css';
 
-import NavBar from './NavBar';
 import BooksForm from '../containers/BooksForm';
 import BooksList from '../containers/BooksList';
 
 const App = () => (
-  <div>
-    <NavBar />
-    <div className="app">
-      <div className="left-sidebar">
+  <div className="bookstoreCms">
+    <div className="content">
+      <div className="app">
+      <BooksList />
         <BooksForm />
-      </div>
-      <div className="main-section">
-        <BooksList />
       </div>
     </div>
   </div>

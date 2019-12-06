@@ -1,5 +1,5 @@
 const initialState = {
-  filter: 'ALL',
+  filter: 'CATEGORY',
 };
 
 const filterReducer = (state = initialState, action) => {
