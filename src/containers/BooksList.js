@@ -26,9 +26,9 @@ const BooksList = ({
   return (
     <div className="bookList">
       <CategoryFilter handleFilterChange={handleFilterChange} filter={filter} />
-     <div>
-       {allBooksList}
-     </div>
+      <div>
+        {allBooksList}
+      </div>
     </div>
   );
 };

@@ -4,8 +4,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './CategoryFilter.css';
 
-
-
 const filterCategories = ['CATEGORY', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 const filterCategoryList = filterCategories.map((category, i) => <option key={i}>{category}</option>);
 const CategoryFilter = ({ handleFilterChange }) => {
@@ -22,9 +20,7 @@ const CategoryFilter = ({ handleFilterChange }) => {
       </label>
      </div>
     </nav>
-   
-
-  );
+   );
 };
 
 CategoryFilter.propTypes = {

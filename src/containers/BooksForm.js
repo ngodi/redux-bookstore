@@ -47,17 +47,14 @@ handleSubmit = event => {
 render() {
   return (
     <div className="bookForm">
-       <h2>ADD NEW BOOK</h2>
+     <h2>ADD NEW BOOK</h2>
       <form onSubmit={this.handleSubmit.bind(this)}>
         <div className="formInput">
-            <input id="title" placeHolder="Book Title" className="title" name="title" value={this.state.title} type="text" onChange={this.handleChange.bind(this)} />
- 
-            <select id="category" className="selectCategory" onChange={this.handleChange.bind(this)} name="category">{categoryList}</select>
- 
-           <button className="btn" type="submit">ADD BOOK</button>
-           </div>
+          <input id="title" placeHolder="Book Title" className="title" name="title" value={this.state.title} type="text" onChange={this.handleChange.bind(this)} />
+          <select id="category" className="selectCategory" onChange={this.handleChange.bind(this)} name="category">{categoryList}</select>
+          <button className="btn" type="submit">ADD BOOK</button>
+        </div>
       </form>
-
     </div>
   );
 }

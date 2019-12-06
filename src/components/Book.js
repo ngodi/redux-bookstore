@@ -16,12 +16,13 @@ const Book = ({
 
   return (
     <div className="book">
-        <div className="bookInfo">
+    <div className="bookInfo">
           <p className="bookCategory">{book.category}</p>
           <h3 className="bookTitle">{book.title}</h3>
-          <span className="bookId">{book.id}</span><br />
+          <span className="bookId">{book.id}</span>
+          <br />
           <button className="removeBtn" onClick={newhandleRemoveBook} type="button">remove</button>
-        </div>
+    </div>
         <div className="readStatus">
           <div className="percentage">
             <p>Completed</p>
