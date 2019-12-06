@@ -10,7 +10,8 @@ import { getId } from '../reducers/books';
 import './bookForm.css';
 import { createBook } from '../actions/index';
 
-const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+export const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+export const categoryList = categories.map((category, i) => <option key={i} className="selectOption">{category}</option>);
 
 class BooksForm extends React.Component {
   constructor(props) {
@@ -44,7 +45,6 @@ handleSubmit = event => {
 };
 
 render() {
-  const categoryList = categories.map((category, i) => <option key={i} className="selectOption">{category}</option>);
   return (
     <div className="bookForm">
       <form onSubmit={this.handleSubmit.bind(this)}>
@@ -52,7 +52,7 @@ render() {
         <div className="formInput">
           <label htmlFor="title">
 Enter book title:
-            <input id="title" name="title" value={this.state.title} type="text" onChange={this.handleChange.bind(this)} />
+            <input id="title" className="title" name="title" value={this.state.title} type="text" onChange={this.handleChange.bind(this)} />
           </label>
 
           <br />
