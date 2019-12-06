@@ -1,6 +1,6 @@
 .book{
     border: 1px solid lightgrey;
-    padding: 15px 10px;
+    padding: 15px 80px 15px 15px;
     margin: 15px 50px;
     background: white;
     border-radius: 5px;
@@ -14,4 +14,21 @@
     background:none;
     text-transform: capitalize;
     cursor: pointer;
+    margin-top: 10px;
+}
+
+.bookTitle{
+    margin: 5px 0;
+}
+
+.readStatus{
+    display: flex;
+    justify-content: center;
+}
+
+.currentChapter{
+    margin-left:100px;
+    border-left: 1px solid lightgray;
+    line-height: 50px;
+    padding-left:20px;
 }

@@ -16,17 +16,19 @@ const Book = ({
 
   return (
     <div className="book">
-        <div className="boonInfo">
+        <div className="bookInfo">
           <p className="bookCategory">{book.category}</p>
-          <span className="bookId">BOOK ID: {book.id}</span>
-          <h3 className="booktitle">{book.title}</h3>
+          <h3 className="bookTitle">{book.title}</h3>
+          <span className="bookId">{book.id}</span><br />
           <button className="removeBtn" onClick={newhandleRemoveBook} type="button">remove</button>
         </div>
-        <div className="percentage">
-           <p>Completed</p>
-        </div>
-        <div className="currentChapter">
-           <p>CURRENT CHAPTER</p>
+        <div className="readStatus">
+          <div className="percentage">
+            <p>Completed</p>
+          </div>
+          <div className="currentChapter">
+            <p>CURRENT CHAPTER</p>
+          </div>
         </div>
   </div>
   );
