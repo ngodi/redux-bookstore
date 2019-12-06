@@ -4,7 +4,7 @@
   margin: 40px auto;
   padding: 60px 10px;
   box-sizing: border-box;
-  background-color:#acafbb;
+  background-color: #F5F6FA;
 }
 
 .app{
@@ -13,8 +13,8 @@
   margin:0 auto;
   padding-bottom: 50px;
   border-radius: 4px;
-  box-shadow: 0 0 60px 0 var(--black-5);
-  background-color: lightgray;
+  box-shadow: 10px 10px 20px 10px#D1D2D5; 
+  background-color:  #fafafa;
   box-sizing: border-box;
 }  
 

@@ -17,7 +17,7 @@
 .selectCategory{
     width: 100px;
     height: 40px;
-    border: solid 1px white;
+    border: 1px solid #e8e8e8;
     background: white;
     padding: 5px 10px;
   }
