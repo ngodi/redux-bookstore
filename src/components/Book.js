@@ -17,20 +17,20 @@ const Book = ({
   return (
     <div className="book">
     <div className="bookInfo">
-          <p className="bookCategory">{book.category}</p>
           <h3 className="bookTitle">{book.title}</h3>
-          <span className="bookId">{book.id}</span>
+          <p className="bookCategory">Category: {book.category}</p>
           <br />
-          <button className="removeBtn" onClick={newhandleRemoveBook} type="button">remove</button>
+         
     </div>
         <div className="readStatus">
           <div className="percentage">
-            <p>Completed</p>
+            <p>Status: Completed</p>
           </div>
           <div className="currentChapter">
-            <p>CURRENT CHAPTER</p>
+            <p>CURRENT CHAPTER: </p>
           </div>
         </div>
+        <button className="removeBtn" onClick={newhandleRemoveBook} type="button">remove</button>
   </div>
   );
 };

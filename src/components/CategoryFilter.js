@@ -12,7 +12,6 @@ const CategoryFilter = ({ handleFilterChange }) => {
   };
   return (
     <nav>
-      <h1>Bookstore CMS</h1>
       <span className="books">Books</span>
       <div className="categoryFilter">
       <label htmlFor="filter">

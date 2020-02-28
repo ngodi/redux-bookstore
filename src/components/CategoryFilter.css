@@ -9,6 +9,7 @@ nav{
     padding: 15px 10px;
     width: inherit;
     margin-bottom:40px;
+    box-shadow: 10px 10px 20px 10px#D1D2D5; 
 }
 nav h1{
     width: 240px;

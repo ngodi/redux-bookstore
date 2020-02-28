@@ -1,12 +1,20 @@
 .book{
     border: 1px solid lightgrey;
-    padding: 15px 80px 15px 15px;
-    margin: 15px 50px;
+
     background: white;
     border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
     align-items: center;
+    box-shadow: 10px 10px 20px 10px#D1D2D5;
+    justify-content:space-evenly;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    transition: 0.5s;
+}
+.book:hover{
+    transform:scale(1.03)
 }
 .removeBtn{
     border:none;
@@ -14,21 +22,17 @@
     background:none;
     text-transform: capitalize;
     cursor: pointer;
-    margin-top: 10px;
+  
 }
 
 .bookTitle{
-    margin: 5px 0;
+ 
 }
 
 .readStatus{
-    display: flex;
-    justify-content: center;
+
 }
 
 .currentChapter{
-    margin-left:100px;
-    border-left: 1px solid lightgray;
-    line-height: 50px;
-    padding-left:20px;
+
 }

@@ -8,11 +8,13 @@ import * as serviceWorker from './serviceWorker';
 import './index.css';
 import App from './components/App';
 import rootReducer from './reducers/index';
+import BookForm from './containers/BooksForm';
 
 const store = createStore(rootReducer);
 
 ReactDOM.render(
   <Provider store={store}>
+    <BookForm />
     <App />
   </Provider>, document.getElementById('root')
 );

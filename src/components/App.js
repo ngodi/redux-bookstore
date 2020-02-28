@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 
-import BooksForm from '../containers/BooksForm';
 import BooksList from '../containers/BooksList';
 
 const App = () => (
@@ -9,7 +8,6 @@ const App = () => (
     <div className="content">
       <div className="app">
       <BooksList />
-        <BooksForm />
       </div>
     </div>
   </div>
