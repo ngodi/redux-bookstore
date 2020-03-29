@@ -1,6 +1,6 @@
 A bookstore management tool with React and Redux
 ================================================
-![bookstore](bookstore.png)
+![bookstore](books.png)
 ### Features
 
 * Display books from store
