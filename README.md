@@ -4,7 +4,7 @@ A bookstore management tool with React and Redux
 ![bookstore](books.png)
 ### Introduction
 
-Redux-bookstore is the front-end of a bookstore management system with objective to store and manage the progress of books read by a given user.
+Redux-bookstore is the front-end of a bookstore management system with the objective to store and manage the progress of books read by a given user.
 
 ### Built with
 
