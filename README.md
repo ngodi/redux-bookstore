@@ -1,15 +1,10 @@
 A bookstore management tool with React and Redux
 ================================================
-![bookstore](books.png)
-### Features
 
-* Display books from store
-* Add books to store
-* Delete books from store
-* Filter books to display by category
+![bookstore](books.png)
 ### Introduction
 
-In this project, React and Redux are used to build a simple bookstore organization and management system.
+Redux-bookstore is the front-end of a bookstore management system with objective to store and manage the progress of books read by a given user.
 
 ### Built with
 
@@ -22,6 +17,12 @@ In this project, React and Redux are used to build a simple bookstore organizati
 *   CSS
 *   ES6
 
+### Features
+
+* Display books from store
+* Add books to store
+* Delete books from store
+* Filter books to display by category
 
 ### live Demo
 https://booktracker.netlify.com
